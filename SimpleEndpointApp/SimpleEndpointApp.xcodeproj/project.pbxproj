@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE63A12423ED09F400C4EE24 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74463523EB4431008B9194 /* NetworkExtension.framework */; };
+		BE74460923EB4104008B9194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE74460823EB4104008B9194 /* Assets.xcassets */; };
+		BE74460F23EB4104008B9194 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE74460E23EB4104008B9194 /* main.mm */; };
+		BE74463623EB4431008B9194 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74463523EB4431008B9194 /* NetworkExtension.framework */; };
+		BE74463A23EB4431008B9194 /* FilterDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74463923EB4431008B9194 /* FilterDataProvider.m */; };
+		BE74463C23EB4431008B9194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74463B23EB4431008B9194 /* main.m */; };
+		BE74464123EB4431008B9194 /* com.simpleendpoint.systemextension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = BE74463323EB4431008B9194 /* com.simpleendpoint.systemextension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE74464B23EB874B008B9194 /* SystemRequestDelegates.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74464A23EB874B008B9194 /* SystemRequestDelegates.m */; };
+		BEEE6C9323ECE8FF00EE285B /* SharedIPC.mm in Sources */ = {isa = PBXBuildFile; fileRef = BEEE6C9223ECE8FF00EE285B /* SharedIPC.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE63A12E23EE150A00C4EE24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE63A12A23EE150A00C4EE24 /* launchDaemon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE74461F23EB41DA008B9194;
+			remoteInfo = launchDaemon;
+		};
+		BE63A13023EE151800C4EE24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE63A12A23EE150A00C4EE24 /* launchDaemon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BE74461E23EB41DA008B9194;
+			remoteInfo = launchDaemon;
+		};
+		BE74463F23EB4431008B9194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE7445F723EB4101008B9194 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE74463223EB4431008B9194;
+			remoteInfo = SimpleEndpointExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE74464523EB4431008B9194 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				BE74464123EB4431008B9194 /* com.simpleendpoint.systemextension.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE63A12A23EE150A00C4EE24 /* launchDaemon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = launchDaemon.xcodeproj; path = ../launchDaemon/launchDaemon.xcodeproj; sourceTree = "<group>"; };
+		BE7445FF23EB4101008B9194 /* SimpleEndpointApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleEndpointApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE74460823EB4104008B9194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE74460D23EB4104008B9194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE74460E23EB4104008B9194 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		BE74461023EB4104008B9194 /* SimpleEndpointApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleEndpointApp.entitlements; sourceTree = "<group>"; };
+		BE74463323EB4431008B9194 /* com.simpleendpoint.systemextension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = com.simpleendpoint.systemextension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE74463523EB4431008B9194 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		BE74463823EB4431008B9194 /* FilterDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterDataProvider.h; sourceTree = "<group>"; };
+		BE74463923EB4431008B9194 /* FilterDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterDataProvider.m; sourceTree = "<group>"; };
+		BE74463B23EB4431008B9194 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE74463D23EB4431008B9194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE74463E23EB4431008B9194 /* SimpleEndpointExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleEndpointExtension.entitlements; sourceTree = "<group>"; };
+		BE74464923EB8700008B9194 /* SystemRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemRequestDelegate.h; sourceTree = "<group>"; };
+		BE74464A23EB874B008B9194 /* SystemRequestDelegates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemRequestDelegates.m; sourceTree = "<group>"; };
+		BEEE6C9123ECE8FF00EE285B /* SharedIPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharedIPC.h; path = ../../SharedIPC/SharedIPC.h; sourceTree = "<group>"; };
+		BEEE6C9223ECE8FF00EE285B /* SharedIPC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SharedIPC.mm; path = ../../SharedIPC/SharedIPC.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE7445FC23EB4101008B9194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE63A12423ED09F400C4EE24 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE74463023EB4431008B9194 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE74463623EB4431008B9194 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE63A12B23EE150A00C4EE24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE63A12F23EE150A00C4EE24 /* launchDaemon */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE7445F623EB4101008B9194 = {
+			isa = PBXGroup;
+			children = (
+				BE63A12A23EE150A00C4EE24 /* launchDaemon.xcodeproj */,
+				BE74460123EB4101008B9194 /* SimpleEndpointApp */,
+				BE74463723EB4431008B9194 /* SimpleEndpointExtension */,
+				BE74463423EB4431008B9194 /* Frameworks */,
+				BE74460023EB4101008B9194 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE74460023EB4101008B9194 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE7445FF23EB4101008B9194 /* SimpleEndpointApp.app */,
+				BE74463323EB4431008B9194 /* com.simpleendpoint.systemextension.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE74460123EB4101008B9194 /* SimpleEndpointApp */ = {
+			isa = PBXGroup;
+			children = (
+				BE74460823EB4104008B9194 /* Assets.xcassets */,
+				BE74460D23EB4104008B9194 /* Info.plist */,
+				BE74460E23EB4104008B9194 /* main.mm */,
+				BE74461023EB4104008B9194 /* SimpleEndpointApp.entitlements */,
+				BE74464923EB8700008B9194 /* SystemRequestDelegate.h */,
+				BE74464A23EB874B008B9194 /* SystemRequestDelegates.m */,
+			);
+			path = SimpleEndpointApp;
+			sourceTree = "<group>";
+		};
+		BE74463423EB4431008B9194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE74463523EB4431008B9194 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE74463723EB4431008B9194 /* SimpleEndpointExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE6C9123ECE8FF00EE285B /* SharedIPC.h */,
+				BEEE6C9223ECE8FF00EE285B /* SharedIPC.mm */,
+				BE74463823EB4431008B9194 /* FilterDataProvider.h */,
+				BE74463923EB4431008B9194 /* FilterDataProvider.m */,
+				BE74463B23EB4431008B9194 /* main.m */,
+				BE74463D23EB4431008B9194 /* Info.plist */,
+				BE74463E23EB4431008B9194 /* SimpleEndpointExtension.entitlements */,
+			);
+			path = SimpleEndpointExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE7445FE23EB4101008B9194 /* SimpleEndpointApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE74461323EB4104008B9194 /* Build configuration list for PBXNativeTarget "SimpleEndpointApp" */;
+			buildPhases = (
+				BE7445FB23EB4101008B9194 /* Sources */,
+				BE7445FC23EB4101008B9194 /* Frameworks */,
+				BE7445FD23EB4101008B9194 /* Resources */,
+				BE74464523EB4431008B9194 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE63A13123EE151800C4EE24 /* PBXTargetDependency */,
+				BE74464023EB4431008B9194 /* PBXTargetDependency */,
+			);
+			name = SimpleEndpointApp;
+			productName = SimpleEndpointApp;
+			productReference = BE7445FF23EB4101008B9194 /* SimpleEndpointApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE74463223EB4431008B9194 /* SimpleEndpointExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE74464223EB4431008B9194 /* Build configuration list for PBXNativeTarget "SimpleEndpointExtension" */;
+			buildPhases = (
+				BE74462F23EB4431008B9194 /* Sources */,
+				BE74463023EB4431008B9194 /* Frameworks */,
+				BE74463123EB4431008B9194 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleEndpointExtension;
+			productName = SimpleEndpointExtension;
+			productReference = BE74463323EB4431008B9194 /* com.simpleendpoint.systemextension.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE7445F723EB4101008B9194 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = YourCompanyHere;
+				TargetAttributes = {
+					BE7445FE23EB4101008B9194 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					BE74463223EB4431008B9194 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BE7445FA23EB4101008B9194 /* Build configuration list for PBXProject "SimpleEndpointApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE7445F623EB4101008B9194;
+			productRefGroup = BE74460023EB4101008B9194 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BE63A12B23EE150A00C4EE24 /* Products */;
+					ProjectRef = BE63A12A23EE150A00C4EE24 /* launchDaemon.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BE7445FE23EB4101008B9194 /* SimpleEndpointApp */,
+				BE74463223EB4431008B9194 /* SimpleEndpointExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BE63A12F23EE150A00C4EE24 /* launchDaemon */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = launchDaemon;
+			remoteRef = BE63A12E23EE150A00C4EE24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE7445FD23EB4101008B9194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE74460923EB4104008B9194 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE74463123EB4431008B9194 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE7445FB23EB4101008B9194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE74460F23EB4104008B9194 /* main.mm in Sources */,
+				BE74464B23EB874B008B9194 /* SystemRequestDelegates.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE74462F23EB4431008B9194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEE6C9323ECE8FF00EE285B /* SharedIPC.mm in Sources */,
+				BE74463C23EB4431008B9194 /* main.m in Sources */,
+				BE74463A23EB4431008B9194 /* FilterDataProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE63A13123EE151800C4EE24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = launchDaemon;
+			targetProxy = BE63A13023EE151800C4EE24 /* PBXContainerItemProxy */;
+		};
+		BE74464023EB4431008B9194 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE74463223EB4431008B9194 /* SimpleEndpointExtension */;
+			targetProxy = BE74463F23EB4431008B9194 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE74461123EB4104008B9194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BE74461223EB4104008B9194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE74461423EB4104008B9194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = SimpleEndpointApp/SimpleEndpointApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XXXXXXXXXX;
+				INFOPLIST_FILE = SimpleEndpointApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simpleendpoint.endpoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE74461523EB4104008B9194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = SimpleEndpointApp/SimpleEndpointApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XXXXXXXXXX;
+				INFOPLIST_FILE = SimpleEndpointApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simpleendpoint.endpoint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE74464323EB4431008B9194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleEndpointExtension/SimpleEndpointExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXXXXXXXXX;
+				INFOPLIST_FILE = SimpleEndpointExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simpleendpoint.systemextension;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BE74464423EB4431008B9194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleEndpointExtension/SimpleEndpointExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXXXXXXXXX;
+				INFOPLIST_FILE = SimpleEndpointExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simpleendpoint.systemextension;
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE7445FA23EB4101008B9194 /* Build configuration list for PBXProject "SimpleEndpointApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE74461123EB4104008B9194 /* Debug */,
+				BE74461223EB4104008B9194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE74461323EB4104008B9194 /* Build configuration list for PBXNativeTarget "SimpleEndpointApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE74461423EB4104008B9194 /* Debug */,
+				BE74461523EB4104008B9194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE74464223EB4431008B9194 /* Build configuration list for PBXNativeTarget "SimpleEndpointExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE74464323EB4431008B9194 /* Debug */,
+				BE74464423EB4431008B9194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE7445F723EB4101008B9194 /* Project object */;
+}
